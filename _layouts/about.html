@@ -43,7 +43,7 @@ layout: default
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
             {%- include news.html limit=true %}
           {%- endif %}
 
@@ -53,11 +53,24 @@ layout: default
             {%- include latest_posts.html %}
           {%- endif %}
 
-          <!-- Selected papers -->
+          <!-- Selected papers. The link is under _site folder -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
+
+          <!-- My Papers -->
+          {% if page.papers -%}
+            <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2> -->
+            {%- include papers_1.html %}
+          {%- endif %}
+
+          <!-- My Projects -->
+          {% if page.projects -%}
+            <!-- <h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Projects</a></h2> -->
+            {%- include projects_1.html %}
+          {%- endif %}
+
 
           <!-- Social -->
           {%- if page.social %}
