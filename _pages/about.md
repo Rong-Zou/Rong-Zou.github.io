@@ -20,7 +20,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page 
 papers: true
 projects: true
-
+experiences: true
 ---
 I am a master student majored in Robotics, Systems and Control at [ETH Zurich](https://ethz.ch/en.html), tutored by [Prof. Roland Siegwart](https://asl.ethz.ch/the-lab/people/person-detail.Mjk5ODE=.TGlzdC8yMDI4LDEyMDExMzk5Mjg=.html). My research interests lie in the fields of robotics and computer vision, with a primary objective being the enhancement of robotic intelligence, particularly in the context of perceptual capabilities, to address complex real-world challenges.
 

@@ -40,7 +40,7 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
-
+          <br>
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
@@ -69,6 +69,12 @@ layout: default
           {% if page.projects -%}
             <!-- <h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Projects</a></h2> -->
             {%- include projects_1.html %}
+          {%- endif %}
+
+          <!-- My Experiences -->
+          {% if page.experiences -%}
+            <!-- <h2><a href="{{ '/experiences/' | relative_url }}" style="color: inherit;">Experiences</a></h2> -->
+            {%- include experiences_1.html %}
           {%- endif %}
 
 
