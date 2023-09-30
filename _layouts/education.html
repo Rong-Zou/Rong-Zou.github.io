@@ -1,32 +1,32 @@
 ---
 layout: default
 ---
-<!-- _layouts/cv.html -->
+<!-- _layouts/education.html -->
 {% unless site.data.resume %}
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+    <h1 class="post-title">{{ page.title }} {% if page.education_pdf %}<a href="{{ page.education_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
       {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
   </header>
 
   <article>
-    <div class="cv">
-      {% for entry in site.data.cv %}
+    <div class="education">
+      {% for entry in site.data.education %}
         <a class="anchor" id="{{ entry.title }}"></a>
         <div class="card mt-3 p-3">
           <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
           <div>
           {% if entry.type == "list" %}
-            {% include cv/list.html %}
+            {% include education/list.html %}
           {% elsif entry.type == "map" %}
-            {% include cv/map.html %}
+            {% include education/map.html %}
           {% elsif entry.type == "nested_list" %}
-            {% include cv/nested_list.html %}
+            {% include education/nested_list.html %}
           {% elsif entry.type == "time_table" %}
-            {% include cv/time_table.html %}
+            {% include education/time_table.html %}
           {% elsif entry.type == "list_groups" %}
-            {% include cv/list_groups.html %}
+            {% include education/list_groups.html %}
           {% else %}
             {{ entry.contents }}
           {% endif %}
@@ -41,12 +41,12 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+    <h1 class="post-title">{{ page.title }} {% if page.education_pdf %}<a href="{{ page.education_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
     {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
   </header>
 
   <article>
-    <div class="cv">
+    <div class="education">
       {% for data in site.data.resume %}
         {% if site.jsonresume and site.jsonresume.size > 0 %}
           {% unless site.jsonresume contains data[0] %}
@@ -61,8 +61,8 @@ layout: default
           <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
           <div>
           {% case data[0] %}
-            {% when "basics" %}
-              {% include resume/basics.html %}
+            {% when "control" %}
+              {% include resume/control.html %}
             {% when "education" %}
               {% include resume/education.html %}
             {% when "work" %}
