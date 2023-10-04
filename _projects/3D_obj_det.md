@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 3D Object Detection
-description: A 3D object detector for detecting vehicles in autonomous driving scenes #Multimodal Data Fusion, Multi-task Learning and 
+description: A 3D object detector for detecting vehicles in autonomous driving scenarios #Multimodal Data Fusion, Multi-task Learning and 
 img: assets/img/box_refine.png
 importance: 2
 category: Computer Vision 

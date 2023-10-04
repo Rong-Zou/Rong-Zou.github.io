@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Visual Odometry
-description: A complete visual odometry pipeline with local and global optimization
+description: A complete visual odometry pipeline with local optimization, loop detection and loop closure
 img: assets/img/vslam-loop.gif
 importance: 1
 category: Computer Vision

@@ -6,10 +6,12 @@
     {%- else -%}
     <a href="{{ project.url | relative_url }}">
       {%- endif %}
-      <div class="card hoverable">
+      <div class="card hoverable" object-fit="cover">
         {%- if project.img %}
         {%- include figure.html
           path=project.img
+          
+          height="150px"
           alt="project thumbnail" -%}
         {%- endif %}
         <div class="card-body">
