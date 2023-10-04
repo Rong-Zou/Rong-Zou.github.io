@@ -1,9 +1,9 @@
 ---
 layout: default
 title: 3D Object Detection
-description: A 3D Object Detector for detecting vehicles in autonomous driving scenes #Multimodal Data Fusion, Multi-task Learning and 
+description: A 3D object detector for detecting vehicles in autonomous driving scenes #Multimodal Data Fusion, Multi-task Learning and 
 img: assets/img/box_refine.png
-importance: 1
+importance: 2
 category: Computer Vision 
 ---
 
@@ -88,8 +88,8 @@ category: Computer Vision
 </h3>
 
 <p style="text-align:justify; padding-top:10px">
-In this project, a 2-stage 3D object detector is constructed to detect vehicles in autonomous driving scenes from irregular 3D point cloud. 
-The first stage (Region Proposal Network (RPN)) is used to create coarse detection results from the point cloud. These initial detections are later refined at the second stage (Box Refinement Network (BRN)). In this project, we use a pretrained RPN and primarily focus on the BRN. 
+In this project, we construct a 2-stage 3D object detector to detect vehicles in autonomous driving scenes from irregular 3D point clouds. 
+The first stage, a Region Proposal Network (RPN), generates coarse detection results from the point cloud inputs. The second stage, a Box Refinement Network (BRN), further refines these initial detections to improve the detection saccuracy. We employ a pre-trained RPN and mainly concentrate on the implementation and improvement of the BRN.
 </p>
 <hr>
 
