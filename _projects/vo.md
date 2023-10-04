@@ -161,7 +161,7 @@ and the effect when they are combined.
 
   <li> 
     <p style="text-align:justify; padding-top:10px">
-      After integrated with local optimization, the VO can run stably and with much higher accuracy on different datasets, which can be seen from the following videos, but it cannot detect and correct loops in KITTI (see in the 3rd video below, or the <a href="#standard_vo_kitti_loopcorrection">figure</a> in the beginning).
+      After integrated with local optimization, the VO can run stably and with much higher accuracy on different datasets, which can be seen from the following videos, but it cannot detect and correct loops in KITTI (see in the 3rd video below, or the <a href="#standard_vo_kitti_loopcorrection">figure</a> at the beginning).
     </p>
     <p>
       <div align="center" class="video-container">
