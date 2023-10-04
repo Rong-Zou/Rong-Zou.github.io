@@ -109,7 +109,7 @@ github_stars:
 </h3>
 
 <p style="text-align:justify; padding-top:10px">
-In this project, we implemented a monocular visual odometry (VO) pipeline with the most essential components: initialization of 3D landmarks, keypoint tracking between two frames, pose estimation using established 2D to 3D correspondences, and triangulation of new landmarks. Building upon this baseline VO, we incorporated local optimization (sliding-window bundle adjustment) to mitigate the scale drift, and global optimization (loop detection and loop correction) to transform the VO pipeline into a VSLAM framework. The performance of the pipelines are evaluated on three different datasets: Parking, <a href="https://www.cvlibs.net/datasets/kitti/eval_odometry.php">KITTI</a> and <a href="https://www.mrpt.org/MalagaUrbanDataset">Malaga</a>.
+In this project, we implemented a monocular visual odometry (VO) pipeline with the most essential components: initialization of 3D landmarks, keypoint tracking between two frames, pose estimation using established 2D to 3D correspondences, and triangulation of new landmarks. Building upon this baseline VO, we incorporated local optimization (sliding-window bundle adjustment) to mitigate the scale drift, and global optimization (loop detection and loop correction) to transform the VO pipeline into a visual simultaneous localization and mapping (VSLAM) framework. The performance of the pipelines are evaluated on three different datasets: Parking, <a href="https://www.cvlibs.net/datasets/kitti/eval_odometry.php">KITTI</a> and <a href="https://www.mrpt.org/MalagaUrbanDataset">Malaga</a>.
 </p>
 <hr>
 <!-- TODO: change when have time.
@@ -161,7 +161,7 @@ and the effect when they are combined.
 
   <li> 
     <p style="text-align:justify; padding-top:10px">
-      After integrated with local optimization, the VO can run stably and with much higher accuracy on different datasets, which can be seen from the foloowing videos, but it cannot detect and correct loops in KITTI (see in the 3rd video below, or the <a href="#standard_vo_kitti_loopcorrection">figure</a> in the beginning).
+      After integrated with local optimization, the VO can run stably and with much higher accuracy on different datasets, which can be seen from the following videos, but it cannot detect and correct loops in KITTI (see in the 3rd video below, or the <a href="#standard_vo_kitti_loopcorrection">figure</a> in the beginning).
     </p>
     <p>
       <div align="center" class="video-container">
