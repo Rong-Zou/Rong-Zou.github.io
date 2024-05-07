@@ -7,7 +7,8 @@ inline: true
 related_posts: false
 ---
 
-I join [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html) and start my semester thesis.
+I'm delighted to begin my semester thesis at [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html), where I'll be working on event-based vision.
+<!-- I join [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html) and start my semester thesis. -->
 
 <!-- 
 Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.

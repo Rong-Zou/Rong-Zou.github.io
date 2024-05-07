@@ -2,10 +2,11 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: This page is still under construction
-nav: true
+description: 
+# This page is still under construction
+nav: false
 nav_order: 2
-display_categories: [Computer Vision, Control, Planning, Robotic Systems]
+display_categories: [Computer Vision, Robotic Systems]
 horizontal: false
 ---
 
