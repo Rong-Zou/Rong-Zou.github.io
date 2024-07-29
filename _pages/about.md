@@ -26,11 +26,11 @@ experiences: true
 I am a master student majored in Robotics, Systems and Control at [ETH Zurich](https://ethz.ch/en.html), tutored by [Prof. Roland Siegwart](https://asl.ethz.ch/the-lab/people/person-detail.Mjk5ODE=.TGlzdC8yMDI4LDEyMDExMzk5Mjg=.html). My current research interests lie in the fields of computer vision, deep learning and robotics.
 <!-- , with a primary objective being the enhancement of robotic intelligence, particularly in the context of perceptual capabilities, to address complex real-world challenges. -->
 
-I am currently a Computer Vision Research Intern at the Computer Vision Lab, Zurich Research Center, [Huawei Technologies Switzerland AG](https://www.huawei.com/ch-en/). Previously, I finished my master's thesis at  [Computer Vision and Geometry Group (CVG)](https://cvg.ethz.ch/) led by [Prof. Marc Pollefeys](https://people.inf.ethz.ch/marc.pollefeys/) on the topic of retrieval robust to object motion blur. I also conducted research on event-based vision at [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html) led by [Prof. Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html).
+I am currently a Computer Vision Research Intern at the Computer Vision Lab led by [Dr. Dengxin Dai](https://www.linkedin.com/in/dengxin-dai-2412725a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ch) at Huawei Zurich Research Center. Previously, I finished my master's thesis at  [Computer Vision and Geometry Group (CVG)](https://cvg.ethz.ch/) led by [Prof. Marc Pollefeys](https://people.inf.ethz.ch/marc.pollefeys/) on the topic of retrieval robust to object motion blur. I also conducted research on event-based vision at [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html) led by [Prof. Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html).
 
-Prior to my Masters, I received my bachelor's degree in Naval Architecture and Ocean Engineering from [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/).
+Prior to my Masters, I received my bachelor's degree in Engineering from [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/).
 
-<!-- I had research experience 
+<!-- Naval Architecture and Ocean 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->

@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-I'm now part of the Computer Vision Lab, Zurich Research Center at [Huawei Technologies Switzerland AG](https://www.huawei.com/ch-en/), taking on the role of Computer Vision Research Intern, and I'm looking forward to the opportunities ahead.
+I'm now part of the Computer Vision Lab at Huawei Zurich Research Center, taking on the role of Computer Vision Research Intern, and I'm looking forward to the opportunities ahead.
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
