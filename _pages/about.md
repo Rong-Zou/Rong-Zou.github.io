@@ -24,10 +24,11 @@ projects: true
 experiences: true
 ---
 
-I am a master’s student in Robotics, Systems and Control at ETH Zurich, tutored by [Prof. Roland Siegwart](https://asl.ethz.ch/the-lab/people/person-detail.Mjk5ODE=.TGlzdC8yMDI4LDEyMDExMzk5Mjg=.html). My research interests include machine learning, computer vision, robotics, and their practical applications.
-
+I am a master’s student in Robotics, Systems and Control at ETH Zurich, tutored by [Prof. Roland Siegwart](https://asl.ethz.ch/the-lab/people/person-detail.Mjk5ODE=.TGlzdC8yMDI4LDEyMDExMzk5Mjg=.html). My research interests broadly include machine learning, computer vision, and robotics, with a particular focus on dynamic scene handling, degraded image restoration, and visual SLAM.
 <!-- I am currently a Computer Vision & Machine Learning Research Intern at the Computer Vision Lab led by [Dr. Dengxin Dai](https://www.linkedin.com/in/dengxin-dai-2412725a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ch) at Huawei Zurich Research Center. Previously, I finished my master's thesis at  [Computer Vision and Geometry Group (CVG)](https://cvg.ethz.ch/) led by [Prof. Marc Pollefeys](https://people.inf.ethz.ch/marc.pollefeys/) on the topic of retrieval robust to object motion blur. I also conducted research on event-based vision at [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html) led by [Prof. Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html). -->
-I am currently a Computer Vision and Machine Learning Research Intern at the Computer Vision Lab, led by [Dr. Dengxin Dai](https://www.linkedin.com/in/dengxin-dai-2412725a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ch), at Huawei Zurich Research Center. Previously, I completed my master’s thesis on the topic of retrieval robust to object motion blur at the [Computer Vision and Geometry Group (CVG)](https://cvg.ethz.ch/) under the guidance of [Prof. Marc Pollefeys](https://people.inf.ethz.ch/marc.pollefeys/). Additionally, I have conducted research on event-based vision at the [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html) with [Prof. Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html).
+
+I completed my master’s thesis on the topic of Retrieval Robust to Object Motion Blur at the [Computer Vision and Geometry Group (CVG)](https://cvg.ethz.ch/) under the guidance of [Prof. Marc Pollefeys](https://people.inf.ethz.ch/marc.pollefeys/). 
+Previously, I was a Computer Vision and Machine Learning Research Intern at the Computer Vision Lab, led by [Dr. Dengxin Dai](https://www.linkedin.com/in/dengxin-dai-2412725a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ch), at Huawei Switzerland Zurich Research Center. I have also conducted research on event-based vision at the [Robotics and Perception Group (RPG)](https://rpg.ifi.uzh.ch/index.html) with [Prof. Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html).
 
 Prior to my Masters, I received my bachelor's degree in Engineering from [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/).
 
@@ -38,6 +39,6 @@ Write your biography here. Tell the world about yourself. Link to your favorite 
 
 <!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-<h5><strong><font color="red">Available for New Opportunities in October 2024!</font></strong></h5> 
+<h5><strong><font color="red">Available for New Opportunities!</font></strong></h5> 
 
-**As I finish my master’s degree, I am actively seeking opportunities in machine learning, computer vision, and robotics. I am ready to contribute to innovative projects and can start as early as October 2024. Check my [CV](assets/pdf/cv.pdf) and [contact me](mailto:ronzou@ethz.ch) if you are interested!**
+**As I finish my master’s degree, I am ready to contribute to innovative projects in computer vision and robotics. Check my [CV](assets/pdf/cv.pdf) and [contact me](mailto:ronzou@ethz.ch) if you are interested!**
