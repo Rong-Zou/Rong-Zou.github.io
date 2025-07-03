@@ -7,7 +7,7 @@ subtitle:
 
 profile:
   align: right
-  image: me.jpg
+  image: me2.jpg
   image_circular: false # crops the image to make it circular
   address: #>
     # <p>Contact:</p>
@@ -36,9 +36,9 @@ I am currently a Research Assistant at the [Robotics and Perception Group (RPG)]
 
 My research interests lie at the intersection of computer vision, deep learning, and robotics, with a particular focus on enhancing the robustness of robotic perception systems in adverse conditions.
 
-I earned my Master’s degree with distinction in Robotics, Systems, and Control from [Eidgenössische Technische Hochschule Zürich (ETH Zurich)](https://ethz.ch/en.html). 
+I earned my Master’s degree **with distinction** in Robotics, Systems, and Control from [Eidgenössische Technische Hochschule Zürich (ETH Zurich)](https://ethz.ch/en.html). 
 
-Prior to my Masters, I received my bachelor's degree with distinction in Engineering from [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/).
+Prior to my Masters, I received my bachelor's degree **with distinction** in Engineering from [Huazhong University of Science and Technology (HUST)](https://english.hust.edu.cn/).
 
 <!-- Naval Architecture and Ocean 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
