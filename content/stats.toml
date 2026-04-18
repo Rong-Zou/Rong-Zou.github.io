@@ -11,7 +11,7 @@ europe_men = 76.1
 china_oldest_man = 112.66
 world_oldest_man = 116.15
 data_year = 2025
-note = "Population-level life expectancy references for men"
+note = ""
 china_men_url = "https://data.un.org/en/iso/CN.html#:~:text=81.2%20/-,75.7,-b"
 europe_men_url = "https://data.un.org/en/reg/g150.html#:~:text=82.8%20/-,76.1,-a"
 china_oldest_man_url = "https://en.wikipedia.org/wiki/List_of_the_verified_oldest_people#:~:text=29%20June%202024-,112%C2%A0years%2C%20241%C2%A0days,-China"

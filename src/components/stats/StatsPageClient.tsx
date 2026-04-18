@@ -123,16 +123,6 @@ function getBirthdayProgress(now: number, birthDate: string) {
   };
 }
 
-function formatDate(timestamp: number | null) {
-  if (!timestamp) return 'Unknown';
-
-  return new Intl.DateTimeFormat('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  }).format(new Date(timestamp));
-}
-
 function makeMapsUrl(city: LocatedCity) {
   return `https://www.google.com/maps/search/?api=1&query=${city.lat},${city.lng}`;
 }
@@ -293,7 +283,7 @@ export default function StatsPageClient({
   );
   const visitedCities = useMemo(
     () => allVisitedCities.filter(hasCoordinates),
-    [stats.cities, stats.visited_cities]
+    [allVisitedCities]
   );
   const countriesVisited = useMemo(() => {
     const counts = new Map<string, number>();
@@ -449,11 +439,11 @@ export default function StatsPageClient({
           transition={{ duration: 0.45 }}
           className="border-b border-neutral-200 pb-5 dark:border-neutral-800"
         >
-          <h1 className="font-serif text-4xl font-bold text-primary">Stats</h1>
+          <h1 className="font-serif text-4xl font-bold text-primary">Life in Numbers</h1>
         </motion.header>
 
         <section className="border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-          <p className="text-sm font-semibold uppercase text-accent">Cities visited</p>
+          <p className="text-sm font-semibold uppercase text-accent">Corners of Earth I have Touched</p>
           <p className="mt-2 font-mono text-5xl font-semibold text-primary">
             {allVisitedCities.length.toLocaleString()}
           </p>
@@ -474,7 +464,7 @@ export default function StatsPageClient({
         <section className="border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase text-accent">My Footprints</p>
+              <p className="text-sm font-semibold uppercase text-accent">My Traces on Earth</p>
             </div>
           </div>
 
@@ -493,7 +483,7 @@ export default function StatsPageClient({
             <div className="border border-neutral-200 p-5 dark:border-neutral-800">
               {selectedCity ? (
                 <>
-                  <p className="text-sm font-semibold uppercase text-accent">Selected city</p>
+                  <p className="text-sm font-semibold uppercase text-accent">Selected Footprint</p>
                   <h3 className="mt-2 text-2xl font-semibold text-primary">
                     {selectedCity.name}, {selectedCity.country}
                   </h3>
@@ -538,7 +528,7 @@ export default function StatsPageClient({
         <section className="border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase text-accent">Current age</p>
+              <p className="text-sm font-semibold uppercase text-accent">How Long I have Been Here</p>
               <p className="mt-2 font-mono text-4xl font-semibold text-primary sm:text-5xl">
                 {ageYears.toFixed(9)}
               </p>
@@ -575,7 +565,7 @@ export default function StatsPageClient({
 
         <section className="border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase text-accent">Time and tide wait for no man</p>
+            <p className="text-sm font-semibold uppercase text-accent">How long I may still be here</p>
             {/* <h2 className="mt-2 font-serif text-3xl font-bold text-primary">Remaining time, gently</h2> */}
             <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
               {lifeNote}
