@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://Rong-Zou.github.io/sitemap.xml
