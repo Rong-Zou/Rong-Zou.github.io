@@ -1,0 +1,50 @@
+type = "card"
+title = "Experience"
+description = ""
+
+[[items]]
+title = "Computer Vision and Machine Learning Research Intern"
+subtitle = "Huawei Zurich Research Center"
+subtitle_link = "https://www.huawei.com/ch-en/"
+date = "Mar. 2024 - Sep. 2024"
+image = "/images/huawei.jpg"
+content = """
+Advisor: [Dr. Ozan Unal](https://www.linkedin.com/in/ozan-unal/?originalSubdomain=ch), [Mario Millhaeusler](https://www.linkedin.com/in/mario-millhaeusler/?originalSubdomain=ch), [Julius Erbach](https://www.linkedin.com/in/julius-erbach-43562110b/?originalSubdomain=ch)
+
+Project supervision: [Dr. Dengxin Dai](https://www.linkedin.com/in/dengxin-dai-2412725a/?originalSubdomain=ch)
+
+Conducted research on image quality enhancement, photorealistic image synthesis, and deep learning-based image de-flickering. The model was validated through independent testing and deployed on real-world products.
+"""
+tags = ["Image Synthesis", "De-flickering", "Deep Learning"]
+
+[[items]]
+title = "Robotics Research Assistant"
+subtitle = "Robotic Systems Lab, ETH Zurich"
+subtitle_link = "https://rsl.ethz.ch/"
+date = "Jun. 2022 - Dec. 2022"
+image = "/images/ETH-Robotic-lab.png"
+content = """
+Advisor: [Fidel Esquivel Estay](https://ch.linkedin.com/in/fidel-esquivel/)
+
+Project: [Autonomous River Cleanup](https://riverclean.ethz.ch/)
+
+Project supervision: [Prof. Marco Hutter](https://www.linkedin.com/in/marco-hutter-bb607713/), [Dr. Hendrik Kolvenbach](https://ch.linkedin.com/in/hendrik-kolvenbach)
+
+Engineered a pipeline to ingest and process sensor data for the Autonomous River Cleanup system, implemented real-time telemetry and remote-control interfaces, and conducted real-machine testing.
+"""
+tags = ["Robotics", "Field Deployment", "Real-time Systems"]
+
+[[items]]
+title = "Robotics Research Intern"
+subtitle = "Corporate Research Asia Pacific, Bosch China"
+subtitle_link = "https://www.bosch.com.cn/"
+date = "May 2021 - Aug. 2021"
+image = "/images/bosch.jpg"
+content = """
+Advisor: [Dr. Wan Ding](https://cn.linkedin.com/in/wan-ding-564075128)
+
+Project supervision: [Dr. Wan Ding](https://cn.linkedin.com/in/wan-ding-564075128)
+
+Improved a robotic-arm grasp planning algorithm, verified it in simulation, assembled and calibrated a real gripper platform, and tested grasping stability.
+"""
+tags = ["Robotic Grasping", "Manipulation", "Planning"]

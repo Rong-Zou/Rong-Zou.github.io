@@ -1,0 +1,398 @@
+birth_date = "1998-09-20"
+birth_date_is_placeholder = false
+
+[summary]
+headline = "Stats"
+subheading = ""
+
+[life_expectancy]
+china_men = 75.7
+europe_men = 76.1
+china_oldest_man = 112.66
+world_oldest_man = 116.15
+data_year = 2025
+note = "Population-level life expectancy references for men"
+china_men_url = "https://data.un.org/en/iso/CN.html#:~:text=81.2%20/-,75.7,-b"
+europe_men_url = "https://data.un.org/en/reg/g150.html#:~:text=82.8%20/-,76.1,-a"
+china_oldest_man_url = "https://en.wikipedia.org/wiki/List_of_the_verified_oldest_people#:~:text=29%20June%202024-,112%C2%A0years%2C%20241%C2%A0days,-China"
+world_oldest_man_url = "https://en.wikipedia.org/wiki/List_of_the_verified_oldest_people#:~:text=12%20June%202013-,116%C2%A0years%2C%2054%C2%A0days,-Japan"
+
+# Add more visited cities by copying one block and changing name/country/lat/lng.
+# You can find coordinates by searching "CITY latitude longitude".
+# Imported from the shared Google Maps list on 2026-04-18 and collapsed to one
+# marker per city or nearby place.
+[[visited_cities]]
+name = "Zurich"
+country = "Switzerland"
+category = "Education"
+lat = 47.3769
+lng = 8.5417
+note = "Current base."
+
+[[visited_cities]]
+name = "Wuhan"
+country = "China"
+category = "Education"
+lat = 30.5928
+lng = 114.3055
+note = "Huazhong University of Science and Technology."
+
+[[visited_cities]]
+name = "Southampton"
+country = "United Kingdom"
+category = "Education"
+lat = 50.935742
+lng = -1.3966381
+note = "University of Southampton."
+
+[[visited_cities]]
+name = "Berkeley"
+country = "United States"
+category = "Education"
+lat = 37.8712141
+lng = -122.255463
+note = "University of California, Berkeley."
+
+[[visited_cities]]
+name = "Stanford"
+country = "United States"
+category = "Travel"
+lat = 37.4275
+lng = -122.1697
+note = "Stanford University."
+
+[[visited_cities]]
+name = "San Jose"
+country = "United States"
+category = "Travel"
+lat = 37.3382
+lng = -121.8863
+note = "Silicon Valley."
+
+[[visited_cities]]
+name = "Berlin"
+country = "Germany"
+category = "Travel"
+lat = 52.5200066
+lng = 13.404954
+
+[[visited_cities]]
+name = "Potsdam"
+country = "Germany"
+category = "Travel"
+lat = 52.3905689
+lng = 13.0644729
+note = "Sanssouci and nearby Potsdam landmarks."
+
+[[visited_cities]]
+name = "Lenzerheide"
+country = "Switzerland"
+category = "Travel"
+lat = 46.740288
+lng = 9.556853
+note = "Lenzerheide and Heidbuel area."
+
+[[visited_cities]]
+name = "Brienz"
+country = "Switzerland"
+category = "Travel"
+lat = 46.7541541
+lng = 8.0316899
+note = "Brienz and Brienzer Rothorn."
+
+[[visited_cities]]
+name = "St. Moritz"
+country = "Switzerland"
+category = "Travel"
+lat = 46.4907973
+lng = 9.8355079
+
+[[visited_cities]]
+name = "Interlaken"
+country = "Switzerland"
+category = "Travel"
+lat = 46.6870208
+lng = 7.8637996
+
+[[visited_cities]]
+name = "Lungern"
+country = "Switzerland"
+category = "Travel"
+lat = 46.7858188
+lng = 8.159704
+
+[[visited_cities]]
+name = "Bern"
+country = "Switzerland"
+category = "Travel"
+lat = 46.948902
+lng = 7.4399543
+
+[[visited_cities]]
+name = "Lucerne"
+country = "Switzerland"
+category = "Travel"
+lat = 47.0494887
+lng = 8.3103841
+
+[[visited_cities]]
+name = "Vaduz"
+country = "Liechtenstein"
+category = "Travel"
+lat = 47.1384649
+lng = 9.5226599
+
+[[visited_cities]]
+name = "Schwende-Rute"
+country = "Switzerland"
+category = "Travel"
+lat = 47.2685217
+lng = 9.4007497
+note = "Appenzell area hikes and lakes."
+
+[[visited_cities]]
+name = "Rigi"
+country = "Switzerland"
+category = "Travel"
+lat = 47.055985
+lng = 8.4851606
+
+[[visited_cities]]
+name = "Wangen an der Aare"
+country = "Switzerland"
+category = "Travel"
+lat = 47.23458
+lng = 7.6556331
+note = "Robotics Summer School from ETH"
+
+[[visited_cities]]
+name = "Lauterbrunnen"
+country = "Switzerland"
+category = "Travel"
+lat = 46.5935058
+lng = 7.9090981
+note = "Lauterbrunnen, Wengen, Stechelberg, and Schilthorn area."
+
+[[visited_cities]]
+name = "London"
+country = "United Kingdom"
+category = "Travel"
+lat = 51.508076
+lng = -0.097194
+
+[[visited_cities]]
+name = "Strasbourg"
+country = "France"
+category = "Travel"
+lat = 48.5811419
+lng = 7.7415077
+
+[[visited_cities]]
+name = "Luxembourg"
+country = "Luxembourg"
+category = "Travel"
+lat = 49.6000452
+lng = 6.1340571
+
+[[visited_cities]]
+name = "Neuhausen am Rheinfall"
+country = "Switzerland"
+category = "Travel"
+lat = 47.6780897
+lng = 8.6154486
+note = "Rhine Falls."
+
+[[visited_cities]]
+name = "Weesen"
+country = "Switzerland"
+category = "Travel"
+lat = 47.1361664
+lng = 9.1031162
+
+[[visited_cities]]
+name = "Morcote"
+country = "Switzerland"
+category = "Travel"
+lat = 45.9278156
+lng = 8.9078997
+
+[[visited_cities]]
+name = "Lugano"
+country = "Switzerland"
+category = "Travel"
+lat = 46.0036778
+lng = 8.951052
+note = "Lugano, Gandria, and Monte San Salvatore."
+
+[[visited_cities]]
+name = "Melide"
+country = "Switzerland"
+category = "Travel"
+lat = 45.9535657
+lng = 8.9507143
+note = "Swissminiatur."
+
+[[visited_cities]]
+name = "Cevio"
+country = "Switzerland"
+category = "Travel"
+lat = 46.4433447
+lng = 8.5155552
+note = "Robiei and Basodino area."
+
+[[visited_cities]]
+name = "Bellinzona"
+country = "Switzerland"
+category = "Travel"
+lat = 46.1946216
+lng = 9.0244124
+
+[[visited_cities]]
+name = "Flims"
+country = "Switzerland"
+category = "Travel"
+lat = 46.8199879
+lng = 9.2959134
+note = "Caumasee, Crestasee, and Ruinaulta area."
+
+[[visited_cities]]
+name = "Zermatt"
+country = "Switzerland"
+category = "Travel"
+lat = 46.0207133
+lng = 7.749117
+note = "Zermatt and Matterhorn."
+
+[[visited_cities]]
+name = "Chiasso"
+country = "Switzerland"
+category = "Travel"
+lat = 45.8366999
+lng = 9.0246111
+
+[[visited_cities]]
+name = "Montreux"
+country = "Switzerland"
+category = "Travel"
+lat = 46.4312213
+lng = 6.9106799
+note = "Montreux and Les Avants."
+
+[[visited_cities]]
+name = "Grindelwald"
+country = "Switzerland"
+category = "Travel"
+lat = 46.624164
+lng = 8.0413962
+
+[[visited_cities]]
+name = "Kandersteg"
+country = "Switzerland"
+category = "Travel"
+lat = 46.4989089
+lng = 7.7291063
+note = "Oeschinen Lake."
+
+[[visited_cities]]
+name = "Geneva"
+country = "Switzerland"
+category = "Travel"
+lat = 46.210553
+lng = 6.1430196
+note = "Geneva landmarks around Cornavin and the lake."
+
+[[visited_cities]]
+name = "Milan"
+country = "Italy"
+category = "Travel"
+lat = 45.487137
+lng = 9.204822
+
+[[visited_cities]]
+name = "Basel"
+country = "Switzerland"
+category = "Travel"
+lat = 47.5475873
+lng = 7.5897064
+
+[[visited_cities]]
+name = "Lausanne"
+country = "Switzerland"
+category = "Travel"
+lat = 46.5189865
+lng = 6.5676007
+note = "EPFL and the Olympic Museum area."
+
+[[visited_cities]]
+name = "Konstanz"
+country = "Germany"
+category = "Travel"
+lat = 47.6587983
+lng = 9.1771316
+
+[[visited_cities]]
+name = "Changsha"
+country = "China"
+category = "Travel"
+lat = 28.2282
+lng = 112.9388
+
+[[visited_cities]]
+name = "Zhangjiajie"
+country = "China"
+category = "Travel"
+lat = 29.1171
+lng = 110.4792
+note = "Hunan."
+
+[[visited_cities]]
+name = "Fenghuang"
+country = "China"
+category = "Travel"
+lat = 27.9483
+lng = 109.5996
+note = "Hunan."
+
+[[visited_cities]]
+name = "Guangzhou"
+country = "China"
+category = "Travel"
+lat = 23.1291
+lng = 113.2644
+
+[[visited_cities]]
+name = "Shenzhen"
+country = "China"
+category = "Travel"
+lat = 22.5431
+lng = 114.0579
+
+[[visited_cities]]
+name = "Shanghai"
+country = "China"
+category = "Travel"
+lat = 31.2304
+lng = 121.4737
+
+[[visited_cities]]
+name = "Beijing"
+country = "China"
+category = "Travel"
+lat = 39.9042
+lng = 116.4074
+
+[[visited_cities]]
+name = "Jingzhou"
+country = "China"
+category = "Travel"
+lat = 30.3348
+lng = 112.2407
+note = "Hubei."
+
+[[visited_cities]]
+name = "Mengzi"
+country = "China"
+category = "Travel"
+lat = 23.3962
+lng = 103.3649
+note = "Yunnan."

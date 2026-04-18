@@ -1,0 +1,29 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Robust robotic perception",
+  "Event cameras and dynamic scenes",
+  "Computer vision under adverse conditions",
+  "3D scene reconstruction and understanding"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "Selected Publications"
+filter = "selected"
+limit = 5
+
+[[sections]]
+id = "news"
+type = "list"
+title = "News"
+source = "news.toml"

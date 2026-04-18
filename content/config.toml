@@ -1,0 +1,79 @@
+[site]
+title = "Rong Zou"
+description = "Personal website of Rong Zou, focused on robotic perception, event-based vision, and robust computer vision."
+favicon = "/favicon.svg"
+last_updated = "April 17, 2026"
+url = "https://rong-zou.github.io"
+
+[author]
+name = "Rong Zou"
+title = "Ph.D. Student in Robotic Perception"
+institution = "Robotics and Perception Group, University of Zurich / ETH Zurich / ETH AI Center"
+avatar = "/rong.png"
+
+[social]
+email = "zou@ifi.uzh.ch"
+location = "Zurich, Switzerland"
+location_url = "https://maps.google.com/?q=Zurich%2C%20Switzerland"
+location_details = [
+  "Robotics and Perception Group",
+  "University of Zurich and ETH Zurich",
+  "Zurich, Switzerland"
+]
+google_scholar = "https://scholar.google.com/citations?user=9XfGSSQAAAAJ&hl=en"
+github = "https://github.com/Rong-Zou"
+linkedin = "https://www.linkedin.com/in/rong-zou-33b842235/"
+
+[features]
+enable_likes = true
+enable_one_page_mode = false
+
+[analytics]
+cloudflare_token = ""
+mapmyvisitors_embed_url = ""
+mapmyvisitors_globe_script_url = ""
+mapmyvisitors_map_script_url = "https://mapmyvisitors.com/map.js?d=JGmX8frgZ0VsEK0FeHzJicw4ohHJYMQ_nA_BIfnjEmY&cl=ffffff&w=a"
+mapmyvisitors_image_url = "https://mapmyvisitors.com/map.png?d=JGmX8frgZ0VsEK0FeHzJicw4ohHJYMQ_nA_BIfnjEmY&cl=ffffff"
+mapmyvisitors_stats_url = "https://mapmyvisitors.com/web/1c3yl"
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = true
+switcher = false
+
+[i18n.labels]
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Experience"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "Stats"
+type = "link"
+target = "stats"
+href = "/stats"
+
+[[navigation]]
+title = "CV"
+type = "link"
+target = "cv"
+href = "/cv"
