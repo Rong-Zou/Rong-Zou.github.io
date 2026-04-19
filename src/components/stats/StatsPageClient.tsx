@@ -451,11 +451,11 @@ export default function StatsPageClient({
             {countriesVisited.map((item) => (
               <span
                 key={item.country}
-                className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-sm text-neutral-700 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-300"
+                className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-sm text-neutral-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700"
               >
                 <span aria-hidden>{item.flag}</span>
                 <span className="font-medium">{item.country}</span>
-                <span className="font-mono text-xs text-neutral-500">{item.cityCount}</span>
+                <span className="font-mono text-xs text-neutral-500 dark:text-neutral-600">{item.cityCount}</span>
               </span>
             ))}
           </div>

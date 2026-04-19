@@ -32,7 +32,7 @@ export default function CVPage() {
               href={cvPath}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-200 px-4 text-sm font-medium text-neutral-700 transition-colors hover:border-accent hover:text-accent dark:border-neutral-800 dark:text-neutral-300"
+              className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-200 px-4 text-sm font-medium text-neutral-700 transition-colors hover:border-accent hover:text-accent dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
             >
               <ArrowTopRightOnSquareIcon className="mr-2 h-4 w-4" />
               Open PDF

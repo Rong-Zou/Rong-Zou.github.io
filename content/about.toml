@@ -9,6 +9,12 @@ research_interests = [
   "3D scene reconstruction and understanding"
 ]
 
+outside_lab = [
+  "I'm happiest in forests, on mountain trails, or anywhere that feels a little wild. If we ever cross paths, it might be on a shaded trail somewhere in the Alps.",
+  "I love capturing small moments of the world with my camera, chasing strange ideas, and getting lost in imaginative stories. I used to read a lot of scifi, and Liu Cixin's The Three-Body Problem is still one of my favorites.",
+  "I also have a soft spot for strategy games, especially Jieqi (dark Chinese chess) and Yingxiongsha (a variant of Legends of the Three Kingdoms), where the fun lies in reading people, timing the right move, and surviving beautifully bad situations."
+]
+
 [[sections]]
 id = "about"
 type = "markdown"
@@ -27,3 +33,4 @@ id = "news"
 type = "list"
 title = "News"
 source = "news.toml"
+limit = 5

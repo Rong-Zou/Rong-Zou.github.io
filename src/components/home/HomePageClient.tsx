@@ -36,6 +36,7 @@ export interface HomePageLocaleData {
   features: SiteConfig['features'];
   enableOnePageMode?: boolean;
   researchInterests?: string[];
+  outsideLab?: string[];
   pagesToShow: PageData[];
 }
 
@@ -60,8 +61,8 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
           <Profile
             author={data.author}
             social={data.social}
-            features={data.features}
             researchInterests={data.researchInterests}
+            outsideLab={data.outsideLab}
           />
         </div>
 
@@ -93,6 +94,7 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                         key={section.id}
                         items={section.items || []}
                         title={section.title}
+                        initialLimit={section.limit}
                       />
                     );
                   default:

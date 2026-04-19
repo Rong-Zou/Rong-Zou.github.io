@@ -12,14 +12,16 @@ export interface NewsItem {
 interface NewsProps {
     items: NewsItem[];
     title?: string;
+    initialLimit?: number;
 }
 
-export default function News({ items, title }: NewsProps) {
+export default function News({ items, title, initialLimit = 3 }: NewsProps) {
     const messages = useMessages();
     const resolvedTitle = title || messages.home.news;
     const [expanded, setExpanded] = useState(false);
-    const visibleItems = expanded ? items : items.slice(0, 3);
-    const hasMore = items.length > 3;
+    const limit = Math.max(1, initialLimit);
+    const visibleItems = expanded ? items : items.slice(0, limit);
+    const hasMore = items.length > limit;
 
     return (
         <motion.section

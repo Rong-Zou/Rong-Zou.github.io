@@ -66,7 +66,7 @@ export default function PublicationsList({ config, publications, embedded = fals
             transition={{ duration: 0.6, delay: 0.4 }}
         >
             <div className="mb-8">
-                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
+                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary dark:text-[var(--foreground)] mb-4`}>{config.title}</h1>
                 {config.description && (
                     <p className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 max-w-2xl`}>
                         {config.description}
@@ -194,10 +194,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                     filteredPublications.map((pub, index) => (
                         <motion.div
                             key={pub.id}
+                            id={`pub-${pub.id}`}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4, delay: 0.1 * index }}
-                            className="bg-white dark:bg-neutral-900 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
+                            className="scroll-mt-24 bg-white dark:bg-neutral-900 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
                         >
                             <div className="flex flex-col md:flex-row gap-6">
                                 {pub.preview && (
@@ -214,17 +215,17 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </div>
                                 )}
                                 <div className="flex-grow">
-                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
+                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary dark:text-[var(--foreground)] mb-2 leading-tight`}>
                                         {pub.title}
                                     </h3>
                                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
                                         {pub.authors.map((author, idx) => (
                                             <span key={idx}>
-                                                <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
+                                                <span className={`${author.isHighlighted ? 'font-semibold text-neutral-900 dark:text-[var(--foreground)]' : 'text-neutral-900 dark:text-[var(--foreground)]'} ${author.isCoAuthor ? 'underline underline-offset-4 decoration-neutral-400 dark:decoration-neutral-600' : ''}`}>
                                                     {author.name}
                                                 </span>
                                                 {author.isCorresponding && (
-                                                    <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-400'}`}>*</sup>
+                                                    <sup className="ml-0 text-neutral-600 dark:text-neutral-400">*</sup>
                                                 )}
                                                 {idx < pub.authors.length - 1 && ', '}
                                             </span>
@@ -246,7 +247,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={pub.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md border border-neutral-200 bg-neutral-100 text-xs font-medium text-neutral-700 transition-colors hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                             >
                                                 ArXiv
                                             </a>
@@ -256,7 +257,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={pub.pdfUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md border border-neutral-200 bg-neutral-100 text-xs font-medium text-neutral-700 transition-colors hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                             >
                                                 PDF
                                             </a>
@@ -266,7 +267,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={pub.posterUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md border border-neutral-200 bg-neutral-100 text-xs font-medium text-neutral-700 transition-colors hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                             >
                                                 Poster
                                             </a>
@@ -276,7 +277,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={`https://doi.org/${pub.doi}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md border border-neutral-200 bg-neutral-100 text-xs font-medium text-neutral-700 transition-colors hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                             >
                                                 DOI
                                             </a>
@@ -286,7 +287,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={pub.code}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md border border-neutral-200 bg-neutral-100 text-xs font-medium text-neutral-700 transition-colors hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                             >
                                                 {messages.publications.code}
                                             </a>
@@ -296,7 +297,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={pub.videoUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md border border-neutral-200 bg-neutral-100 text-xs font-medium text-neutral-700 transition-colors hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                             >
                                                 <PlayCircleIcon className="h-3 w-3 mr-1.5" />
                                                 Video
@@ -306,10 +307,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             <button
                                                 onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
                                                 className={cn(
-                                                    "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
+                                                    "inline-flex items-center px-3 py-1 rounded-md border text-xs font-medium transition-colors",
                                                     expandedAbstractId === pub.id
-                                                        ? "bg-accent text-white"
-                                                        : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                                                        ? "border-accent bg-accent text-white"
+                                                        : "border-neutral-200 bg-neutral-100 text-neutral-700 hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                                 )}
                                             >
                                                 <DocumentTextIcon className="h-3 w-3 mr-1.5" />
@@ -320,10 +321,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             <button
                                                 onClick={() => setExpandedBibtexId(expandedBibtexId === pub.id ? null : pub.id)}
                                                 className={cn(
-                                                    "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
+                                                    "inline-flex items-center px-3 py-1 rounded-md border text-xs font-medium transition-colors",
                                                     expandedBibtexId === pub.id
-                                                        ? "bg-accent text-white"
-                                                        : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                                                        ? "border-accent bg-accent text-white"
+                                                        : "border-neutral-200 bg-neutral-100 text-neutral-700 hover:bg-accent hover:text-white dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700 dark:hover:border-accent"
                                                 )}
                                             >
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
