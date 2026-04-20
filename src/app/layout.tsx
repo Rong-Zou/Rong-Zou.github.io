@@ -5,6 +5,7 @@ import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import { ThemeProvider } from '@/components/ui/ThemeProvider';
 import { LocaleProvider } from '@/components/ui/LocaleProvider';
+import MapMyVisitorsTracker from '@/components/analytics/MapMyVisitorsTracker';
 import { getConfig } from '@/lib/config';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 import type { SiteConfig } from '@/lib/config';
@@ -114,6 +115,16 @@ function buildLocalizedConfigMaps(
   };
 }
 
+function normalizeMapMyVisitorsImageUrl(imageUrl?: string) {
+  const trimmed = imageUrl?.trim() || '';
+
+  if (trimmed.startsWith('https://mapmyvisitors.com/map.png?')) {
+    return trimmed;
+  }
+
+  return '';
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -122,6 +133,9 @@ export default function RootLayout({
   const config = getConfig();
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
   const cloudflareToken = config.analytics?.cloudflare_token?.trim();
+  const mapMyVisitorsTrackingImageUrl = normalizeMapMyVisitorsImageUrl(
+    config.analytics?.mapmyvisitors_image_url
+  );
   const targetLocales = runtimeI18n.enabled ? runtimeI18n.locales : [runtimeI18n.defaultLocale];
 
   const {
@@ -188,6 +202,12 @@ export default function RootLayout({
               defaultLocale={runtimeI18n.defaultLocale}
               mapMyVisitorsUrl={config.analytics?.mapmyvisitors_stats_url}
             />
+            {mapMyVisitorsTrackingImageUrl ? (
+              <MapMyVisitorsTracker
+                imageUrl={mapMyVisitorsTrackingImageUrl}
+                statsUrl={config.analytics?.mapmyvisitors_stats_url || 'https://mapmyvisitors.com/'}
+              />
+            ) : null}
           </LocaleProvider>
         </ThemeProvider>
       </body>
