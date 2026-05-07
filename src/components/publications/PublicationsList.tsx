@@ -23,6 +23,10 @@ interface PublicationsListProps {
     embedded?: boolean;
 }
 
+function isVideoPreview(preview?: string) {
+    return !!preview && /\.(mp4|webm|ogg)$/i.test(preview);
+}
+
 export default function PublicationsList({ config, publications, embedded = false }: PublicationsListProps) {
     const messages = useMessages();
     const [searchQuery, setSearchQuery] = useState('');
@@ -204,13 +208,26 @@ export default function PublicationsList({ config, publications, embedded = fals
                                 {pub.preview && (
                                     <div className="w-full md:w-48 flex-shrink-0">
                                         <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
-                                            <Image
-                                                src={`/papers/${pub.preview}`}
-                                                alt={pub.title}
-                                                fill
-                                                className="object-cover"
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                            />
+                                            {isVideoPreview(pub.preview) ? (
+                                                <video
+                                                    src={`/papers/${pub.preview}`}
+                                                    className="h-full w-full object-cover"
+                                                    autoPlay
+                                                    muted
+                                                    loop
+                                                    playsInline
+                                                    preload="metadata"
+                                                    aria-label={pub.title}
+                                                />
+                                            ) : (
+                                                <Image
+                                                    src={`/papers/${pub.preview}`}
+                                                    alt={pub.title}
+                                                    fill
+                                                    className="object-cover"
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                />
+                                            )}
                                         </div>
                                     </div>
                                 )}
