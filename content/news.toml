@@ -1,14 +1,10 @@
 [[news]]
-date = "2026-07"
-content = "Our paper \"Low-latency Event-based Object Detection with Spatially-Sparse Linear Attention\" was accepted to ECCV 2026."
+date = "2026-06"
+content = "Our paper \"Low-latency Event-based Object Detection with Spatially-Sparse Linear Attention\" was accepted by ECCV 2026."
 
 [[news]]
 date = "2026-03"
 content = "Our paper \"Event-Aided Sharp Radiance Field Reconstruction for Fast-Flying Drones\" appeared in IEEE Transactions on Robotics."
-
-[[news]]
-date = "2026-03"
-content = "Our paper \"Low-latency Event-based Object Detection with Spatially-Sparse Linear Attention\" is available on arXiv."
 
 [[news]]
 date = "2026-02"
