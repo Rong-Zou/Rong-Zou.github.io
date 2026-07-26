@@ -309,6 +309,21 @@ lat = 45.487137
 lng = 9.204822
 
 [[visited_cities]]
+name = "Ragusa"
+country = "Italy"
+category = "Education"
+lat = 36.9269
+lng = 14.7255
+note = "International Computer Vision Summer School 2026."
+
+[[visited_cities]]
+name = "Catania"
+country = "Italy"
+category = "Travel"
+lat = 37.5079
+lng = 15.0830
+
+[[visited_cities]]
 name = "Basel"
 country = "Switzerland"
 category = "Travel"
