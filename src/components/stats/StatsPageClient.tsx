@@ -26,6 +26,11 @@ interface LeafletMarker {
 }
 
 interface LeafletMap {
+  closePopup: () => LeafletMap;
+  fitBounds: (
+    bounds: [number, number][],
+    options?: { padding?: [number, number]; maxZoom?: number; animate?: boolean }
+  ) => LeafletMap;
   attributionControl?: {
     setPrefix: (prefix: string | false) => void;
   };
@@ -300,11 +305,27 @@ export default function StatsPageClient({
         return {
           country,
           cityCount,
+          coordinates: visitedCities
+            .filter((city) => city.country.trim() === country)
+            .map((city): [number, number] => [city.lat, city.lng]),
           flag: code ? countryCodeToFlagEmoji(code) : '\ud83c\udff3\ufe0f',
         };
       })
       .sort((a, b) => b.cityCount - a.cityCount || a.country.localeCompare(b.country));
-  }, [allVisitedCities]);
+  }, [allVisitedCities, visitedCities]);
+
+  function zoomToCountry(coordinates: [number, number][]) {
+    const map = leafletMapRef.current;
+    if (!map || coordinates.length === 0) return;
+
+    map.closePopup();
+    map.fitBounds(coordinates, {
+      padding: [32, 32],
+      maxZoom: 12,
+      animate: !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    });
+  }
+
   const selectedCity = visitedCities.find((city) => city.name === selectedCityName) || visitedCities[0];
   const lifeYear = stats.life_expectancy?.data_year || 2025;
   const lifeNote =
@@ -449,14 +470,19 @@ export default function StatsPageClient({
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             {countriesVisited.map((item) => (
-              <span
+              <button
                 key={item.country}
-                className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-sm text-neutral-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700"
+                type="button"
+                onClick={() => zoomToCountry(item.coordinates)}
+                disabled={mapStatus !== 'ready' || item.coordinates.length === 0}
+                aria-label={`Zoom to visited cities in ${item.country}`}
+                aria-controls="visited-cities-map"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-sm text-neutral-700 transition-colors enabled:cursor-pointer enabled:hover:border-accent enabled:hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-700"
               >
                 <span aria-hidden>{item.flag}</span>
                 <span className="font-medium">{item.country}</span>
                 <span className="font-mono text-xs text-neutral-500 dark:text-neutral-600">{item.cityCount}</span>
-              </span>
+              </button>
             ))}
           </div>
         </section>
@@ -470,7 +496,7 @@ export default function StatsPageClient({
 
           <div className="mt-5 grid gap-4 lg:grid-cols-[1.5fr_0.7fr]">
             <div className="relative isolate z-0 h-[22rem] overflow-hidden border border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-950 sm:h-[28rem]">
-              <div ref={mapContainerRef} className="stats-leaflet-map h-full w-full" />
+              <div id="visited-cities-map" ref={mapContainerRef} className="stats-leaflet-map h-full w-full" />
               {mapStatus !== 'ready' && (
                 <div className="absolute inset-0 grid place-items-center bg-white/85 p-6 text-center text-sm text-neutral-500 dark:bg-neutral-950/85">
                   {mapStatus === 'error'

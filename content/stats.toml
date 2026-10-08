@@ -411,3 +411,40 @@ category = "Travel"
 lat = 23.3962
 lng = 103.3649
 note = "Yunnan."
+
+[[visited_cities]]
+name = "Feldkirch"
+country = "Austria"
+category = "Travel"
+lat = 47.2381
+lng = 9.5983
+
+[[visited_cities]]
+name = "Pittsburgh"
+country = "United States"
+category = "Travel"
+lat = 40.4406
+lng = -79.9959
+
+[[visited_cities]]
+name = "New York"
+country = "United States"
+category = "Travel"
+lat = 40.7128
+lng = -74.0060
+
+[[visited_cities]]
+name = "Rugao"
+country = "China"
+category = "Travel"
+lat = 32.3800
+lng = 120.5700
+note = "Nantong, Jiangsu."
+
+[[visited_cities]]
+name = "Nanjing"
+country = "China"
+category = "Travel"
+lat = 32.0603
+lng = 118.7969
+note = "Jiangsu."
