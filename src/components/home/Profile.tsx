@@ -93,8 +93,12 @@ export default function Profile({ author, social, researchInterests, outsideLab 
                 <p className="text-lg text-accent font-medium mb-1">
                     {author.title}
                 </p>
-                <p className="text-neutral-600 mb-2">
-                    {author.institution}
+                <p className="text-neutral-600 text-center mb-2">
+                    {author.institution.split(',').map((institution) => institution.trim()).filter(Boolean).map((institution) => (
+                        <span key={institution} className="block">
+                            {institution}
+                        </span>
+                    ))}
                 </p>
             </div>
 

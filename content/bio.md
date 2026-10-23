@@ -1,4 +1,4 @@
-I am pursuing a Ph.D. in robotic perception with the [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html), led by [Prof. Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html). I am also an associated doctoral researcher with the [ETH AI Center](https://ai.ethz.ch/).
+I am a Ph.D. student in robotic perception with the [Robotics and Perception Group](https://rpg.ifi.uzh.ch/index.html) at the [Institute of Neuroinformatics](https://www.ini.uzh.ch/en.html), a joint institute of [UZH](https://www.news.uzh.ch/en/articles/news/2026/einstein-phd-thesis.html) and [ETH Zurich](https://ethz.ch/en/news-and-events/eth-news/news/2021/07/from-mediocre-student-to-nobel-prize-winner.html). My supervisor is [Prof. Davide Scaramuzza](https://rpg.ifi.uzh.ch/people_scaramuzza.html). I am also an associated doctoral researcher with the [ETH AI Center](https://ai.ethz.ch/).
 
 My research interests sit at the intersection of vision, learning, and robotics, with a focus on event-based visual sensing and transferable representation learning for robotic tasks such as motion estimation, scene understanding, and robust perception in challenging conditions.
 
