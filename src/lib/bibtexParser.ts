@@ -96,10 +96,9 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       selected,
       selectedOrder,
       preview,
-      previewFit: tags.preview_fit === 'contain' ? 'contain' : undefined,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'selected_order', 'preview', 'preview_fit', 'description', 'keywords', 'code', 'pdf', 'pdfurl', 'poster', 'posterurl', 'video', 'videourl', 'publication_type', 'pubtype']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'selected_order', 'preview', 'description', 'keywords', 'code', 'pdf', 'pdfurl', 'poster', 'posterurl', 'video', 'videourl', 'publication_type', 'pubtype']),
     };
 
     // Clean up undefined fields
