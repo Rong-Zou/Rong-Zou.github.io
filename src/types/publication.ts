@@ -45,6 +45,7 @@ export interface Publication {
   selected?: boolean;
   selectedOrder?: number;
   preview?: string;
+  previewFit?: 'contain';
   summary?: string;
   researchArea: ResearchArea;
   description?: string;

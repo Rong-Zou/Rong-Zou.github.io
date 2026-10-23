@@ -224,7 +224,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                     src={`/papers/${pub.preview}`}
                                                     alt={pub.title}
                                                     fill
-                                                    className="object-cover"
+                                                    className={pub.previewFit === 'contain' ? 'object-contain bg-white' : 'object-cover'}
                                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                                 />
                                             )}
